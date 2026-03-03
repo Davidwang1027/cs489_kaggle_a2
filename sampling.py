@@ -80,7 +80,7 @@ def _load_checkpoint(checkpoint_path: Path, *, device: 'torch.device') -> Tuple[
     token_to_id = payload['vocab']
     if not isinstance(token_to_id, dict):
         raise ValueError('Checkpoint key "vocab" must be a dict[token, id]')
-
+    print(token_to_id)
     specials = payload.get('special_tokens', {})
     bos_token = specials.get('bos_token', '<bos>')
     eos_token = specials.get('eos_token', '<eos>')
