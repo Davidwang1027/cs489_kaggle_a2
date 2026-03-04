@@ -1,5 +1,4 @@
 import collections
-import csv
 
 def load_and_abstract_corpus(filepath, word_to_symbol):
     """Reads the corpus and converts words to their starting POS tags."""
@@ -70,20 +69,47 @@ def write_corpus_to_file(corpus_tags, output_filepath):
             f.write(" ".join(sentence) + "\n")
 
 def write_rules_to_file(applied_rules, rules_output_filepath):
-    """Writes the list of applied merge rules to CSV."""
-    with open(rules_output_filepath, 'w', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=['ID', 'LHS', 'LHS Type', 'RHS', 'Probability', 'Passes', 'Replacements'],
-        )
-        writer.writeheader()
-        writer.writerows(applied_rules)
+    """
+    Writes applied merge rules in NLTK PCFG string format.
+
+    Output format per line:
+        LHS -> RHS [probability]
+    """
+    if not applied_rules:
+        with open(rules_output_filepath, 'w', encoding='utf-8') as f:
+            f.write('')
+        return
+
+    # Keep first-seen order but dedupe identical rules.
+    lhs_to_rhs = collections.OrderedDict()
+    ordered_keys = []
+    seen = set()
+
+    for rule in applied_rules:
+        lhs = rule['LHS']
+        rhs = rule['RHS']
+        key = (lhs, rhs)
+        if lhs not in lhs_to_rhs:
+            lhs_to_rhs[lhs] = []
+        if rhs not in lhs_to_rhs[lhs]:
+            lhs_to_rhs[lhs].append(rhs)
+        if key not in seen:
+            ordered_keys.append(key)
+            seen.add(key)
+
+    lines = []
+    for lhs, rhs in ordered_keys:
+        prob = 1.0 / len(lhs_to_rhs[lhs])
+        lines.append(f"{lhs} -> {rhs} [{prob:.12g}]")
+
+    with open(rules_output_filepath, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines) + '\n')
 
 def run_interactive_discovery(
     corpus_filepath,
     symbol_to_words,
     output_filepath="10k_current_abstracted_corpus.txt",
-    rules_output_filepath="applied_rules.csv",
+    rules_output_filepath="applied_rules.pcfg",
 ):
     # Reverse dict for fast O(1) lookups
     word_to_symbol = {word: sym for sym, words in symbol_to_words.items() for word in words}
@@ -129,9 +155,7 @@ def run_interactive_discovery(
                     {
                         'ID': rule_id,
                         'LHS': new_symbol,
-                        'LHS Type': 'nonterminal',
                         'RHS': f'{target_pair[0]} {target_pair[1]}',
-                        'Probability': '',
                         'Passes': passes,
                         'Replacements': replacements,
                     }
@@ -156,7 +180,6 @@ def run_interactive_discovery(
 
 
 
-import collections
 from pathlib import Path
 
 src_path = Path('sample/pcfg2_10k.txt')

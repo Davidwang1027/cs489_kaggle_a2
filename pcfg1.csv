@@ -1,11 +1,11 @@
 ID,LHS,LHS Type,RHS,Probability
-1,S,nonterminal,NP VP,0.367
-2,S,nonterminal,NNS VP,0.633
-3,NP,nonterminal,DT NNS,1.0
-4,VP,nonterminal,V NNS,1.0
+1,NP,nonterminal,DT NNS,1.0
+2,VP,nonterminal,V NNS,1.0
+3,S,nonterminal,NP VP,0.367
+4,S,nonterminal,NNS VP,0.633
 5,DT,preterminal,the,1.0
 6,NNS,preterminal,cats,0.475
 7,NNS,preterminal,mice,0.315
 8,NNS,preterminal,dogs,0.210
-9,V,preterminal,chase,0.74
-10,V,preterminal,like,0.26
+9,V,preterminal,chase,0.999
+10,V,preterminal,like,0.001
