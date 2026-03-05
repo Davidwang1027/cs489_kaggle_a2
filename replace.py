@@ -182,7 +182,7 @@ def run_interactive_discovery(
 
 from pathlib import Path
 
-src_path = Path('sample/pcfg2_10k.txt')
+src_path = Path('sample/pcfg2_50k.txt')
 lines = src_path.read_text(encoding='utf-8').splitlines()
 
 # PCFG symbol -> vocabulary mapping
@@ -211,9 +211,9 @@ if missing:
 
 symbol_lines = [' '.join(word_to_symbol[tok] for tok in line.split()) for line in lines]
 
-out_path = Path('sample/pcfg2_10k_symbols.txt')
+out_path = Path('sample/pcfg2_50k_symbols.txt')
 out_path.write_text('\n'.join(symbol_lines) + '\n', encoding='utf-8')
 
 
 # --- Execute ---
-run_interactive_discovery('sample/pcfg2_10k.txt', symbol_to_words)
+run_interactive_discovery('sample/pcfg2_50k.txt', symbol_to_words)
