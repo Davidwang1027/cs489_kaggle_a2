@@ -1,0 +1,77 @@
+ID,LHS,LHS Type,RHS,Probability
+1,A,preterminal,a,1.0
+2,B,preterminal,b,1.0
+3,C,preterminal,c,1.0
+4,D,preterminal,d,1.0
+5,E,preterminal,e,1.0
+6,F,preterminal,f,1.0
+7,G,preterminal,g,1.0
+8,H,preterminal,h,1.0
+9,I,preterminal,i,1.0
+10,J,preterminal,j,1.0
+11,K,preterminal,k,1.0
+12,L,preterminal,l,1.0
+13,M,preterminal,m,1.0
+14,N,preterminal,n,1.0
+15,O,preterminal,o,1.0
+16,P,preterminal,p,1.0
+17,Q,preterminal,q,1.0
+18,R,preterminal,r,1.0
+19,S,preterminal,s,1.0
+20,T,preterminal,t,1.0
+21,U,preterminal,u,1.0
+22,V,preterminal,v,1.0
+23,W,preterminal,w,1.0
+24,X,preterminal,x,1.0
+25,Y,preterminal,y,1.0
+26,Z,preterminal,z,1.0
+27,S,nonterminal,S NT2,0.032207
+28,S,nonterminal,S NT5,0.095861
+29,S,nonterminal,S NT7,0.227763
+30,S,nonterminal,S NT8,0.144714
+31,S,nonterminal,NT5 S,0.030445
+32,S,nonterminal,NT8 S,0.147663
+33,S,nonterminal,NT8 NT5,0.321347
+34,NT1,nonterminal,A B,0.475108
+35,NT1,nonterminal,A M,0.039139
+36,NT1,nonterminal,C D,0.198227
+37,NT1,nonterminal,M N,0.038902
+38,NT1,nonterminal,Y Z,0.090092
+39,NT1,nonterminal,NT5 NT1,0.021625
+40,NT1,nonterminal,NT7 NT4,0.136909
+41,NT2,nonterminal,NT1 NT9,0.322157
+42,NT2,nonterminal,NT3 NT4,0.168326
+43,NT2,nonterminal,NT3 NT6,0.110275
+44,NT2,nonterminal,NT6 NT4,0.196131
+45,NT2,nonterminal,NT9 NT6,0.203111
+46,NT3,nonterminal,E F,0.400488
+47,NT3,nonterminal,G H,0.163383
+48,NT3,nonterminal,I J,0.436129
+49,NT4,nonterminal,A M,0.229724
+50,NT4,nonterminal,I J,0.046535
+51,NT4,nonterminal,M N,0.114348
+52,NT4,nonterminal,O P,0.059469
+53,NT4,nonterminal,Y Z,0.549923
+54,NT5,nonterminal,NT1 NT9,0.042186
+55,NT5,nonterminal,NT2 NT5,0.246531
+56,NT5,nonterminal,NT4 NT9,0.323153
+57,NT5,nonterminal,NT6 NT4,0.035647
+58,NT5,nonterminal,NT7 NT5,0.070907
+59,NT5,nonterminal,NT9 NT6,0.281576
+60,NT6,nonterminal,K L,0.073785
+61,NT6,nonterminal,U V,0.64347
+62,NT6,nonterminal,W X,0.282745
+63,NT7,nonterminal,NT1 NT9,0.64653
+64,NT7,nonterminal,NT3 NT4,0.322276
+65,NT7,nonterminal,NT7 NT2,0.031194
+66,NT8,nonterminal,NT1 NT9,0.361404
+67,NT8,nonterminal,NT2 NT5,0.096274
+68,NT8,nonterminal,NT3 NT6,0.029735
+69,NT8,nonterminal,NT7 NT5,0.452275
+70,NT8,nonterminal,NT9 NT6,0.060312
+71,NT9,nonterminal,E F,0.066426
+72,NT9,nonterminal,E I,0.265706
+73,NT9,nonterminal,G H,0.029021
+74,NT9,nonterminal,O U,0.107213
+75,NT9,nonterminal,Q R,0.376688
+76,NT9,nonterminal,S T,0.154946

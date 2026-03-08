@@ -1,0 +1,16 @@
+2026-03-08 00:55:37 [main              ] INFO  ======================================================================
+2026-03-08 00:55:37 [main              ] INFO  Task 3 Grid Search — Inside-Outside EM
+2026-03-08 00:55:37 [main              ] INFO  ======================================================================
+2026-03-08 00:55:37 [main              ] INFO  Corpus:      sample/pcfg3_10k.txt
+2026-03-08 00:55:37 [main              ] INFO  Output dir:  task3_results
+2026-03-08 00:55:37 [main              ] INFO  Log file:    task3_results\grid_search.log
+2026-03-08 00:55:37 [main              ] INFO  N_NT values: [10, 11, 12, 13, 14, 15]
+2026-03-08 00:55:37 [main              ] INFO  Seeds:       [42, 43, 44, 45, 46, 47, 48, 49]
+2026-03-08 00:55:37 [main              ] INFO  EM iters:    150
+2026-03-08 00:55:37 [main              ] INFO  EM batch:    3000
+2026-03-08 00:55:37 [main              ] INFO  Max len:     50
+2026-03-08 00:55:37 [main              ] INFO  Prune every: 25 (soft=0.0030, final=0.0200)
+2026-03-08 00:55:37 [main              ] INFO  Eval sents:  1000
+2026-03-08 00:55:37 [main              ] INFO  Total configs: 48
+2026-03-08 00:55:37 [main              ] INFO  Workers:       8
+2026-03-08 00:55:37 [main              ] INFO  ----------------------------------------------------------------------

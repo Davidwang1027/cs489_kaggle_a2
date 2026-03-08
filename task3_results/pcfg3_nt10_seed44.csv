@@ -1,0 +1,70 @@
+ID,LHS,LHS Type,RHS,Probability
+1,A,preterminal,a,1.0
+2,B,preterminal,b,1.0
+3,C,preterminal,c,1.0
+4,D,preterminal,d,1.0
+5,E,preterminal,e,1.0
+6,F,preterminal,f,1.0
+7,G,preterminal,g,1.0
+8,H,preterminal,h,1.0
+9,I,preterminal,i,1.0
+10,J,preterminal,j,1.0
+11,K,preterminal,k,1.0
+12,L,preterminal,l,1.0
+13,M,preterminal,m,1.0
+14,N,preterminal,n,1.0
+15,O,preterminal,o,1.0
+16,P,preterminal,p,1.0
+17,Q,preterminal,q,1.0
+18,R,preterminal,r,1.0
+19,S,preterminal,s,1.0
+20,T,preterminal,t,1.0
+21,U,preterminal,u,1.0
+22,V,preterminal,v,1.0
+23,W,preterminal,w,1.0
+24,X,preterminal,x,1.0
+25,Y,preterminal,y,1.0
+26,Z,preterminal,z,1.0
+27,S,nonterminal,NT2 S,0.415831
+28,S,nonterminal,NT2 NT7,0.083927
+29,S,nonterminal,NT7 S,0.160065
+30,S,nonterminal,NT7 NT7,0.340177
+31,NT1,nonterminal,E F,0.135891
+32,NT1,nonterminal,E I,0.54972
+33,NT1,nonterminal,G H,0.062683
+34,NT1,nonterminal,O U,0.251705
+35,NT2,nonterminal,NT3 NT5,0.211589
+36,NT2,nonterminal,NT4 NT5,0.078235
+37,NT2,nonterminal,NT4 NT9,0.182449
+38,NT2,nonterminal,NT5 NT9,0.067192
+39,NT2,nonterminal,NT8 NT1,0.270375
+40,NT2,nonterminal,NT8 NT3,0.19016
+41,NT3,nonterminal,E I,0.035662
+42,NT3,nonterminal,Q R,0.675301
+43,NT3,nonterminal,S T,0.289038
+44,NT4,nonterminal,E F,0.280284
+45,NT4,nonterminal,G H,0.126974
+46,NT4,nonterminal,I J,0.398662
+47,NT4,nonterminal,K L,0.151683
+48,NT4,nonterminal,NT7 NT4,0.042398
+49,NT5,nonterminal,U V,0.707886
+50,NT5,nonterminal,W X,0.292114
+51,NT6,nonterminal,NT4 NT4,0.194052
+52,NT6,nonterminal,NT8 NT1,0.805948
+53,NT7,nonterminal,NT1 NT5,0.090929
+54,NT7,nonterminal,NT2 NT2,0.092869
+55,NT7,nonterminal,NT2 NT7,0.351448
+56,NT7,nonterminal,NT4 NT9,0.037334
+57,NT7,nonterminal,NT6 NT7,0.122435
+58,NT7,nonterminal,NT7 NT6,0.053541
+59,NT7,nonterminal,NT9 NT3,0.251444
+60,NT8,nonterminal,A B,0.50523
+61,NT8,nonterminal,A M,0.035798
+62,NT8,nonterminal,C D,0.208517
+63,NT8,nonterminal,M N,0.024963
+64,NT8,nonterminal,Y Z,0.083673
+65,NT8,nonterminal,NT2 NT9,0.141819
+66,NT9,nonterminal,A M,0.234348
+67,NT9,nonterminal,M N,0.13063
+68,NT9,nonterminal,O P,0.064149
+69,NT9,nonterminal,Y Z,0.570873
