@@ -1,0 +1,142 @@
+ID,LHS,LHS Type,RHS,Probability
+1,A,preterminal,a,1.0
+2,B,preterminal,b,1.0
+3,C,preterminal,c,1.0
+4,D,preterminal,d,1.0
+5,E,preterminal,e,1.0
+6,F,preterminal,f,1.0
+7,G,preterminal,g,1.0
+8,H,preterminal,h,1.0
+9,I,preterminal,i,1.0
+10,J,preterminal,j,1.0
+11,K,preterminal,k,1.0
+12,L,preterminal,l,1.0
+13,M,preterminal,m,1.0
+14,N,preterminal,n,1.0
+15,O,preterminal,o,1.0
+16,P,preterminal,p,1.0
+17,Q,preterminal,q,1.0
+18,R,preterminal,r,1.0
+19,PT_S,preterminal,s,1.0
+20,T,preterminal,t,1.0
+21,U,preterminal,u,1.0
+22,V,preterminal,v,1.0
+23,W,preterminal,w,1.0
+24,X,preterminal,x,1.0
+25,Y,preterminal,y,1.0
+26,Z,preterminal,z,1.0
+27,F_ABCD,nonterminal,A B,0.705733
+28,F_ABCD,nonterminal,C D,0.294267
+29,F_EFGH,nonterminal,E F,0.701298
+30,F_EFGH,nonterminal,G H,0.298702
+31,F_EIOU,nonterminal,E I,0.699437
+32,F_EIOU,nonterminal,O U,0.300563
+33,F_IJKL,nonterminal,I J,0.720282
+34,F_IJKL,nonterminal,K L,0.279718
+35,F_MNOP,nonterminal,M N,0.719443
+36,F_MNOP,nonterminal,O P,0.280557
+37,F_QRST,nonterminal,Q R,0.702752
+38,F_QRST,nonterminal,PT_S T,0.297248
+39,F_UVWX,nonterminal,U V,0.700599
+40,F_UVWX,nonterminal,W X,0.299401
+41,F_AM,nonterminal,A M,1.0
+42,F_YZ,nonterminal,Y Z,1.0
+43,S,nonterminal,S NT9,0.067007
+44,S,nonterminal,NT1 NT4,0.032589
+45,S,nonterminal,NT2 S,0.184951
+46,S,nonterminal,NT3 S,0.141455
+47,S,nonterminal,NT4 S,0.04577
+48,S,nonterminal,NT4 NT8,0.042792
+49,S,nonterminal,NT4 NT9,0.209968
+50,S,nonterminal,NT6 S,0.110242
+51,S,nonterminal,NT7 NT8,0.081826
+52,S,nonterminal,NT12 NT4,0.083401
+53,NT1,nonterminal,F_ABCD F_EFGH,0.381442
+54,NT1,nonterminal,F_EFGH F_IJKL,0.123495
+55,NT1,nonterminal,F_IJKL F_MNOP,0.198973
+56,NT1,nonterminal,NT12 NT5,0.266447
+57,NT1,nonterminal,NT12 NT11,0.029644
+58,NT2,nonterminal,NT1 NT9,0.122689
+59,NT2,nonterminal,NT2 NT3,0.300998
+60,NT2,nonterminal,NT2 NT6,0.055778
+61,NT2,nonterminal,NT5 NT13,0.448351
+62,NT2,nonterminal,NT11 NT13,0.072183
+63,NT3,nonterminal,F_ABCD F_QRST,0.570726
+64,NT3,nonterminal,F_IJKL F_UVWX,0.322449
+65,NT3,nonterminal,F_MNOP F_QRST,0.106825
+66,NT4,nonterminal,NT1 NT8,0.075285
+67,NT4,nonterminal,NT1 NT9,0.059994
+68,NT4,nonterminal,NT5 NT13,0.521494
+69,NT4,nonterminal,NT7 NT9,0.029327
+70,NT4,nonterminal,NT10 NT9,0.024253
+71,NT4,nonterminal,NT11 NT10,0.043546
+72,NT4,nonterminal,NT11 NT13,0.246103
+73,NT5,nonterminal,F_ABCD F_EIOU,0.546765
+74,NT5,nonterminal,F_EFGH F_AM,0.087986
+75,NT5,nonterminal,F_EFGH F_YZ,0.192465
+76,NT5,nonterminal,NT1 NT12,0.150097
+77,NT5,nonterminal,NT5 NT3,0.022687
+78,NT6,nonterminal,F_ABCD F_EFGH,0.0292
+79,NT6,nonterminal,F_ABCD F_QRST,0.261098
+80,NT6,nonterminal,F_EFGH F_IJKL,0.062565
+81,NT6,nonterminal,F_IJKL F_MNOP,0.065298
+82,NT6,nonterminal,F_IJKL F_UVWX,0.179998
+83,NT6,nonterminal,F_MNOP F_QRST,0.202232
+84,NT6,nonterminal,F_QRST F_UVWX,0.128184
+85,NT6,nonterminal,F_AM F_EIOU,0.043164
+86,NT6,nonterminal,F_YZ F_EIOU,0.028261
+87,NT7,nonterminal,F_IJKL F_YZ,0.036818
+88,NT7,nonterminal,F_AM F_QRST,0.084061
+89,NT7,nonterminal,F_YZ F_QRST,0.174806
+90,NT7,nonterminal,NT5 NT3,0.096767
+91,NT7,nonterminal,NT11 NT3,0.033497
+92,NT7,nonterminal,NT11 NT5,0.08113
+93,NT7,nonterminal,NT11 NT10,0.226496
+94,NT7,nonterminal,NT11 NT13,0.166826
+95,NT7,nonterminal,NT12 NT10,0.099597
+96,NT8,nonterminal,F_EIOU F_UVWX,0.161096
+97,NT8,nonterminal,NT1 NT7,0.088274
+98,NT8,nonterminal,NT1 NT8,0.124558
+99,NT8,nonterminal,NT1 NT13,0.098008
+100,NT8,nonterminal,NT5 NT13,0.148407
+101,NT8,nonterminal,NT11 NT10,0.038059
+102,NT8,nonterminal,NT11 NT13,0.086342
+103,NT8,nonterminal,NT12 NT7,0.083578
+104,NT8,nonterminal,NT12 NT10,0.17168
+105,NT9,nonterminal,F_ABCD F_EFGH,0.138121
+106,NT9,nonterminal,F_EFGH F_IJKL,0.057074
+107,NT9,nonterminal,F_EIOU F_UVWX,0.453995
+108,NT9,nonterminal,F_IJKL F_MNOP,0.071269
+109,NT9,nonterminal,NT1 NT8,0.133998
+110,NT9,nonterminal,NT12 NT3,0.033424
+111,NT9,nonterminal,NT12 NT7,0.026196
+112,NT9,nonterminal,NT12 NT10,0.085922
+113,NT10,nonterminal,F_ABCD F_QRST,0.074884
+114,NT10,nonterminal,F_IJKL F_UVWX,0.07189
+115,NT10,nonterminal,F_MNOP F_QRST,0.07603
+116,NT10,nonterminal,F_AM F_QRST,0.055501
+117,NT10,nonterminal,F_YZ F_QRST,0.246914
+118,NT10,nonterminal,NT11 NT10,0.027903
+119,NT10,nonterminal,NT12 NT5,0.446878
+120,NT11,nonterminal,F_ABCD F_EIOU,0.262476
+121,NT11,nonterminal,F_EFGH F_AM,0.04714
+122,NT11,nonterminal,F_EFGH F_YZ,0.173724
+123,NT11,nonterminal,F_QRST F_UVWX,0.19007
+124,NT11,nonterminal,F_UVWX F_AM,0.103691
+125,NT11,nonterminal,F_UVWX F_YZ,0.069195
+126,NT11,nonterminal,F_AM F_EIOU,0.057518
+127,NT11,nonterminal,F_YZ F_EIOU,0.062173
+128,NT11,nonterminal,NT6 NT12,0.034014
+129,NT12,nonterminal,F_ABCD F_EFGH,0.041193
+130,NT12,nonterminal,F_QRST F_UVWX,0.501115
+131,NT12,nonterminal,F_UVWX F_YZ,0.098751
+132,NT12,nonterminal,F_AM F_EIOU,0.065605
+133,NT12,nonterminal,F_YZ F_EIOU,0.212179
+134,NT12,nonterminal,NT6 NT11,0.02783
+135,NT12,nonterminal,NT6 NT12,0.053327
+136,NT13,nonterminal,F_IJKL F_AM,0.021629
+137,NT13,nonterminal,F_IJKL F_YZ,0.063708
+138,NT13,nonterminal,F_MNOP F_EIOU,0.094957
+139,NT13,nonterminal,F_AM F_QRST,0.239991
+140,NT13,nonterminal,F_YZ F_QRST,0.552605
+141,NT13,nonterminal,NT3 NT9,0.027111

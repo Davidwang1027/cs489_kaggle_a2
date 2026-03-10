@@ -7,5 +7,5 @@ ID,LHS,LHS Type,RHS,Probability
 6,NNS,preterminal,cats,0.475
 7,NNS,preterminal,mice,0.315
 8,NNS,preterminal,dogs,0.210
-9,V,preterminal,chase,0.999
-10,V,preterminal,like,0.001
+9,V,preterminal,chase,0.74
+10,V,preterminal,like,0.26

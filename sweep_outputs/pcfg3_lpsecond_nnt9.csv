@@ -1,0 +1,116 @@
+ID,LHS,LHS Type,RHS,Probability
+1,A,preterminal,a,1.0
+2,B,preterminal,b,1.0
+3,C,preterminal,c,1.0
+4,D,preterminal,d,1.0
+5,E,preterminal,e,1.0
+6,F,preterminal,f,1.0
+7,G,preterminal,g,1.0
+8,H,preterminal,h,1.0
+9,I,preterminal,i,1.0
+10,J,preterminal,j,1.0
+11,K,preterminal,k,1.0
+12,L,preterminal,l,1.0
+13,M,preterminal,m,1.0
+14,N,preterminal,n,1.0
+15,O,preterminal,o,1.0
+16,P,preterminal,p,1.0
+17,Q,preterminal,q,1.0
+18,R,preterminal,r,1.0
+19,PT_S,preterminal,s,1.0
+20,T,preterminal,t,1.0
+21,U,preterminal,u,1.0
+22,V,preterminal,v,1.0
+23,W,preterminal,w,1.0
+24,X,preterminal,x,1.0
+25,Y,preterminal,y,1.0
+26,Z,preterminal,z,1.0
+27,F_ABCD,nonterminal,A B,0.705733
+28,F_ABCD,nonterminal,C D,0.294267
+29,F_EFGH,nonterminal,E F,0.701298
+30,F_EFGH,nonterminal,G H,0.298702
+31,F_EIOU,nonterminal,E I,0.699437
+32,F_EIOU,nonterminal,O U,0.300563
+33,F_IJKL,nonterminal,I J,0.720282
+34,F_IJKL,nonterminal,K L,0.279718
+35,F_MNOP,nonterminal,M N,0.719443
+36,F_MNOP,nonterminal,O P,0.280557
+37,F_QRST,nonterminal,Q R,0.702752
+38,F_QRST,nonterminal,PT_S T,0.297248
+39,F_UVWX,nonterminal,U V,0.700599
+40,F_UVWX,nonterminal,W X,0.299401
+41,F_AM,nonterminal,A M,1.0
+42,F_YZ,nonterminal,Y Z,1.0
+43,S,nonterminal,S NT7,0.067123
+44,S,nonterminal,NT1 NT4,0.148824
+45,S,nonterminal,NT2 S,0.047113
+46,S,nonterminal,NT2 NT4,0.091665
+47,S,nonterminal,NT3 S,0.094531
+48,S,nonterminal,NT3 NT7,0.046071
+49,S,nonterminal,NT4 S,0.034568
+50,S,nonterminal,NT4 NT7,0.041734
+51,S,nonterminal,NT4 NT8,0.044112
+52,S,nonterminal,NT5 S,0.257923
+53,S,nonterminal,NT6 S,0.126335
+54,NT1,nonterminal,F_ABCD F_EIOU,0.339561
+55,NT1,nonterminal,F_EFGH F_AM,0.036461
+56,NT1,nonterminal,F_EFGH F_YZ,0.12942
+57,NT1,nonterminal,F_QRST F_UVWX,0.20919
+58,NT1,nonterminal,F_UVWX F_AM,0.023127
+59,NT1,nonterminal,F_UVWX F_YZ,0.050641
+60,NT1,nonterminal,F_AM F_EIOU,0.032741
+61,NT1,nonterminal,F_YZ F_EIOU,0.089199
+62,NT1,nonterminal,NT5 NT1,0.05161
+63,NT1,nonterminal,NT6 NT1,0.03805
+64,NT2,nonterminal,F_ABCD F_EIOU,0.143735
+65,NT2,nonterminal,F_EFGH F_AM,0.066001
+66,NT2,nonterminal,F_EFGH F_YZ,0.094045
+67,NT2,nonterminal,F_QRST F_UVWX,0.153278
+68,NT2,nonterminal,NT1 NT8,0.053858
+69,NT2,nonterminal,NT3 NT5,0.082276
+70,NT2,nonterminal,NT5 NT1,0.333602
+71,NT2,nonterminal,NT5 NT2,0.043192
+72,NT2,nonterminal,NT6 NT1,0.030013
+73,NT3,nonterminal,NT1 NT7,0.044265
+74,NT3,nonterminal,NT2 NT7,0.075449
+75,NT3,nonterminal,NT2 NT8,0.449384
+76,NT3,nonterminal,NT3 NT5,0.053945
+77,NT3,nonterminal,NT3 NT6,0.025099
+78,NT3,nonterminal,NT4 NT7,0.351858
+79,NT4,nonterminal,NT1 NT8,0.489426
+80,NT4,nonterminal,NT5 NT8,0.034931
+81,NT4,nonterminal,NT8 NT7,0.475643
+82,NT5,nonterminal,F_ABCD F_EFGH,0.091081
+83,NT5,nonterminal,F_ABCD F_QRST,0.149133
+84,NT5,nonterminal,F_EFGH F_IJKL,0.040223
+85,NT5,nonterminal,F_IJKL F_MNOP,0.052833
+86,NT5,nonterminal,F_IJKL F_UVWX,0.147174
+87,NT5,nonterminal,F_MNOP F_QRST,0.088817
+88,NT5,nonterminal,F_QRST F_UVWX,0.196138
+89,NT5,nonterminal,F_UVWX F_AM,0.023351
+90,NT5,nonterminal,F_UVWX F_YZ,0.045845
+91,NT5,nonterminal,F_AM F_EIOU,0.042937
+92,NT5,nonterminal,F_YZ F_EIOU,0.094661
+93,NT5,nonterminal,NT1 NT8,0.027806
+94,NT6,nonterminal,F_ABCD F_EFGH,0.105157
+95,NT6,nonterminal,F_ABCD F_QRST,0.451631
+96,NT6,nonterminal,F_IJKL F_MNOP,0.044506
+97,NT6,nonterminal,F_IJKL F_UVWX,0.061312
+98,NT6,nonterminal,F_MNOP F_QRST,0.037573
+99,NT6,nonterminal,NT1 NT8,0.171121
+100,NT6,nonterminal,NT4 NT5,0.038349
+101,NT6,nonterminal,NT5 NT1,0.090351
+102,NT7,nonterminal,F_ABCD F_EFGH,0.229368
+103,NT7,nonterminal,F_EFGH F_IJKL,0.089394
+104,NT7,nonterminal,F_EIOU F_UVWX,0.392982
+105,NT7,nonterminal,F_IJKL F_MNOP,0.124911
+106,NT7,nonterminal,NT1 NT8,0.163346
+107,NT8,nonterminal,F_ABCD F_EIOU,0.028759
+108,NT8,nonterminal,F_ABCD F_QRST,0.024562
+109,NT8,nonterminal,F_IJKL F_UVWX,0.03525
+110,NT8,nonterminal,F_IJKL F_YZ,0.058872
+111,NT8,nonterminal,F_MNOP F_EIOU,0.07254
+112,NT8,nonterminal,F_MNOP F_QRST,0.025564
+113,NT8,nonterminal,F_AM F_QRST,0.207518
+114,NT8,nonterminal,F_YZ F_QRST,0.494251
+115,NT8,nonterminal,NT5 NT1,0.052684
