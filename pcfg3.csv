@@ -33,8 +33,8 @@ ID,LHS,LHS Type,RHS,Probability
 32,F_EIOU,nonterminal,O U,0.300563
 33,F_IJKL,nonterminal,I J,0.720282
 34,F_IJKL,nonterminal,K L,0.279718
-35,F_MNOP,nonterminal,M N,0.701567
-36,F_MNOP,nonterminal,O P,0.298433
+35,F_MNOP,nonterminal,M N,0.719443
+36,F_MNOP,nonterminal,O P,0.280557
 37,F_QRST,nonterminal,Q R,0.702752
 38,F_QRST,nonterminal,PT_S T,0.297248
 39,F_UVWX,nonterminal,U V,0.700599
